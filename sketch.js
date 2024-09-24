@@ -68,7 +68,7 @@ function connectWebSocket() {
   myButton.html("Connecting...");
   host = myInput.value();
   console.log("Trying to connect to: " + host);
-  socket = new WebSocket('ws://' + host);
+  socket = new WebSocket('wss://' + host);
   socket.onopen = openHandler;
   socket.onerror = errorHandler;
   socket.onmessage = messageHandler;
