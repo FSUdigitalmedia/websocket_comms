@@ -66,7 +66,8 @@ function keyPressed() {
 // the connect button has been pressed, so try to make a connection
 function connectWebSocket() {
   myButton.html("Connecting...");
-  host = myInput.value;
+  host = myInput.value();
+  console.log("Trying to connect to: " + host);
   socket = new WebSocket('ws://' + host);
   socket.onopen = openHandler;
   socket.onerror = errorHandler;
