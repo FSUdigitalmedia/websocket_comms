@@ -27,26 +27,14 @@ The "actor" sketch, on the other hand, is designed to do something in response t
 flowchart TD
     subgraph Server
     style Server fill:#fff
-    subgraph Browser1
     X(Director p5.js Sketch)
+    X --F--> Y(WebSockets Server)
     end
-    X ---> Y(WebSockets Server)
-    end
-    subgraph Client 3 Computer
-    subgraph Browser4
-    Y --F--> H(Actor p5.js Sketch)
-    end
-    end
-    subgraph Client 2 Computer
-    subgraph Browser3
+    subgraph Computer w/vscode Live Server
     Y --F--> I(Actor p5.js Sketch)
     end
-    end
-    subgraph Client 1 Android Phone
-    subgraph Browser2
+    subgraph Android w/Simple HTTP Server
     Y --F--> G(Actor p5.js Sketch)
-    end
-    L(HTTP Server)
     end
 ```
 
