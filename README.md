@@ -70,6 +70,10 @@ the browser will have no issue allowing insecure WebSockets connections. On an A
 you could have the same setup of serving the "actor" web page locally. [Simple HTTP Server](https://play.google.com/store/apps/details?id=com.phlox.simpleserver&hl=en_US) is an example of an Android
 app that can do the job. The local URL would then be loaded in the phone browser of your choice.
 
+> [!NOTE]  
+> If you're one of my FSU students, you won't be able to make this work on the campus WiFi networks. You'll either need to create a hotspot on your phone and have all of the devices join it,
+> or use the non-internet-connected WiFi router that I have hanging around for this purpose.
+ 
 ## WebSockets Server
 
 So where does this WebSockets Server that echoes incoming messages to all of its connected clients exist? 
