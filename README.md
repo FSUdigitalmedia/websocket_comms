@@ -1,5 +1,7 @@
 # WebSockets Communication Demo
 
+![spidermans](https://github.com/user-attachments/assets/e3db7bf0-98c8-47c9-9ae1-aa045ce3bb03)
+
 This is a demo showing how websockets can allow communication 
 across p5.js sketches on multiple different devices.
 
