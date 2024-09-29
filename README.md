@@ -51,12 +51,11 @@ going to the `about:config` URL and setting `network.websocket.allowInsecureFrom
 (You'd want to set it back to `false` when it's not needed!). Unfortunately, on phone browsers you don't
 have an equivalent option.
 
-It's possible to avoid changing that setting and to also make it work with a phone, however. 
-For example, in the director/actor example described above, the "director" sketch could be 
-served locally using vscode's Live Server, for example. Since that local web server is served with `http` instead of `https`,
+In the director/actor example described above, the "director" sketch could be 
+served locally using vscode's Live Server. Since that local web server is served with `http` instead of `https`,
 the browser will have no issue allowing insecure WebSockets connections. On an Android phone, 
 you could have the same setup of serving the "actor" web page locally. [Simple HTTP Server](https://play.google.com/store/apps/details?id=com.phlox.simpleserver&hl=en_US) is an example of an Android
-app that can do the job. The local URL would then be loaded in the phone browser of your choice.
+app that can do the job. The local HTTP URL would then be loaded in the phone browser of your choice.
 
 > [!NOTE]  
 > If you're one of my FSU students, you won't be able to make this work on the campus WiFi networks. You'll either need to create a hotspot on your phone and have all of the devices join it,
